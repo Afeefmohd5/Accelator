@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+/* nav css start here */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+
+/* nav css end here */
+
+.accelator {
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 1rem;
+}
+
+.list li :hover {
+    background-color: rgb(46, 28, 46);
+    border-radius: 20px;
+}
+
+.list li a:hover {
+    color: white;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-image: url(https://www.geteducated.com/wp-content/uploads/2022/08/how-to-become-a-businessman-1140x400.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    gap: 15px;
+
+}
+
+#learn-more {
+    padding: 1rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+
+
+
+
+}
+
+#learn-more a {
+    text-decoration: none;
+    color: black;
+}
+
+#learn-more:hover,
+#learn-more a:hover {
+    background-color: rgb(46, 28, 46);
+    /* padding: 0.7rem 0.7rem; */
+    border-radius: 10px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 5rem 0;
+
+}
+
+.boxer1 {
+    display: flex;
+    align-items: center;
+}
+
+.boxer1 img {
+
+    width: 100%;
+}
+
+.boxer2 {
+    padding: 1rem;
+    gap: 1rem;
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.foot-wrapper {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    gap: 1rem;
+    background-color: black;
+    color: white;
+
+
+}
+
+.icons svg {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    padding: 4px;
+}
+
+.icons svg:hover {
+    box-shadow: 0px 0px 2px 2px rgb(120, 122, 7);
+
+}
+
+.mobile-menu {
+    height: 3rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:965px) {
+    .list {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+}
+
+@media (max-width:525px) {
+    .boxer2 {
+        width: 100%;
+        height: 100%;
+        padding: 0 2rem;
+    }
+}
